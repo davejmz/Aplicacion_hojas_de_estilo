@@ -25,3 +25,6 @@ Para ver la página web localmente, sigue estos pasos:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/davejmz/Aplicacion_hojas_estilo.git
+
+
+Gracias por su atención!
