@@ -1,0 +1,181 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #444;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #1e3a5f;
+    margin-bottom: 0.5em;
+}
+
+p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 1em;
+}
+
+.encabezado {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.seccion-inicio, .seccion-servicios, .seccion-contacto {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1000px;
+}
+
+.caracteristicas,
+.seccion-servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.caracteristica-card, .servicio-card {
+    background-color: #f8f8f8;
+    border: 1px solid #e0eaf1;
+    border-radius: 10px;
+    padding: 25px;
+    flex-basis: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caracteristica-card:hover, .servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-card {
+    color: #ff9900;
+}
+
+.titulo-servicio {
+    color: #1e3a5f;
+}
+
+.pie-pagina {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+}
+
+#contenido-principal, #contenido-servicios, #contenido-contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#formulario-contacto label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#formulario-contacto input, #formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#formulario-contacto textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#formulario-contacto button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#formulario-contacto button:hover {
+    background-color: #218838;
+    transform: scale(1.01);
+}
+
+.color-rojo {
+    color: #dc3545;
+}
+
+.color-verde {
+    color: #28a745;
+}
+
+.color-amarillo {
+    color: #ffc107;
+}
+
+/* --- FIX: Títulos centrados en secciones con flex --- */
+.seccion-servicios h2,
+.caracteristicas h2,
+.seccion-contacto h2,
+.seccion-inicio h2 {
+flex-basis: 100%;
+text-align: center;
+font-size: 2em;
+margin-bottom: 0.2em;
+}
